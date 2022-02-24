@@ -1,0 +1,30 @@
+numbers=[]  
+num=int(input("Enter the number of elements: "))
+for i in range(1,num+1):
+    listElements=int(input("Enter element %d: "%i))
+    numbers.append(listElements)
+evenList=[]  
+oddList=[] 
+for j in numbers:
+    if j%2==0:
+        evenList.append(j)
+    else:
+        oddList.append(j)
+print("Even number list: ",evenList)
+print("Odd number list: ",oddList)
+
+
+
+OUTPUT:
+Enter the number of elements:8
+Enter element 1:8
+Enter element 2:11
+Enter element 3:15
+Enter element 4:18
+Enter element 5:22
+Enter element 6:25
+Enter element 7:33
+Enter element 8:38
+
+Even number list: [8,18,22,38]
+Odd number list: [11,15,25,33]
